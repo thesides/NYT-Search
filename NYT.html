@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New York Times Search</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<!--Header Section-->
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="jumbotron header">
+					<h1>New York Times Search</h1>
+				</div>
+			</div>
+		</div>
+		<!--Form Section-->
+		<div class="row">
+			<div class="col-md-2"></div>		
+			<div class="col-md-8">
+			<form>
+				<div class="form-group">
+					<label for="search">Search Term:</label>
+					<input type="text" class="form-control" id="search-text" placeholder="Search Term">
+				</div>
+
+				<div class="form-group">
+					<label for="number">Number of Records to Retrieve:</label><input type="text" value"" class="form-control" id="records" placeholder="Number of Records">
+				</div>
+
+				<div class="form-group">
+					<label for="start">Start Year (Optional):</label>
+					<input type="text" class="form-control" id="start-year" placeholder="Start Year">
+				</div>
+
+				<div class="form-group">
+					<label for="end">End Year (Optional):</label>
+					<input type="text" class="form-control" id="end-year" placeholder="End Year">
+				</div>
+
+				<button class="button" id="search">Search</button>
+
+				<button class="button" id="clear">Clear Results</button>
+			</form>	
+		</div>
+		<!--API Section-->
+		<div class="row">
+			<div class="col-md-2"></div>		
+			<div class="col-md-8">
+				<div class="panel panel-default">
+					<div class="panel-heading topArticles">
+						<h3 class="panel-title"><span class="glyphicon glyphicon-sunglasses"></span>Top Articles</h3>
+					</div>
+					<div class="panel-body" id="articleList">
+						<ul class="list-group">
+							<li class="list-group-item" id="articleList">Cras justo odio</li>
+							<li class="list-group-item">Dapibus ac facilisis in</li>
+							<li class="list-group-item">Morbi leo risus</li>
+							<li class="list-group-item">Porta ac consectetur ac</li>
+							<li class="list-group-item">Vestibulum at eros</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
