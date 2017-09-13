@@ -5,11 +5,6 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
-	<script
-		src="https://code.jquery.com/jquery-3.2.1.js"
-		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-		crossorigin="anonymous">
-	</script>
 </head>
 <body>
 
@@ -39,12 +34,12 @@
 
 					<div class="form-group">
 						<label for="start">Start Year (Optional):</label>
-						<input type="text" class="form-control" id="start-year" placeholder="Start Year">
+						<input type="date" class="form-control" id="start-year" placeholder="Start Year">
 					</div>
 
 					<div class="form-group">
 						<label for="end">End Year (Optional):</label>
-						<input type="text" class="form-control" id="end-year" placeholder="End Year">
+						<input type="date" class="form-control" id="end-year" placeholder="End Year">
 					</div>
 
 					<button class="button" id="search">Search</button>
@@ -56,24 +51,19 @@
 		<!--API Section-->
 		<div class="row">
 		<div class="col-md-2"></div>		
-			<div class="col-md-8">
-				<div class="panel panel-default">
+			<div class="col-md-8" id="displayCol">
+				 <div class="panel panel-default">
 					<div class="panel-heading panel-heading-custom">
 						<h3 class="panel-title"><span class="glyphicon glyphicon-list-alt"></span>	Top Articles</h3>
 					</div>
 					<div class="panel-body" id="articleList">
-						<ul class="list-group">
-							<li class="list-group-item" id="articleList">Cras justo odio</li>
-							<li class="list-group-item">Dapibus ac facilisis in</li>
-							<li class="list-group-item">Morbi leo risus</li>
-							<li class="list-group-item">Porta ac consectetur ac</li>
-							<li class="list-group-item">Vestibulum at eros</li>
-						</ul>
 					</div>
-				</div>
+				</div> 
 			</div>
 
 		</div>
-		<script src="application.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="application.js" type="text/javascript" async="true">	
+		</script>
 	</body>
 	</html>
